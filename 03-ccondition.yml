@@ -1,5 +1,6 @@
 - name: Demo on conditions
   hosts: all
+  connection: local
   tasks:
     - name: Print Fruit Name
       ansible.builtin.debug:
