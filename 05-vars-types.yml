@@ -4,7 +4,7 @@
   vars:
     fruit_name: Orange # string
     quantity: 100 # number
-    for_sale: "true" # boolean, Booleans supported by ansible are yes/no true/false , Boolean becomes string if you quote it.
+    for_sale: 'true' # boolean, Booleans supported by ansible are yes/no true/false , Boolean becomes string if you quote it.
   tasks:
     - name: Print
       ansible.builtin.debug:
