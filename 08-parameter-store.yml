@@ -1,0 +1,7 @@
+- name: Demo for AWS Patameter store
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: fetch some value
+      ansible.builtin.debug:
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'rds.dev.database_name', region='us-east-1') }}"
